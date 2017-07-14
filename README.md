@@ -20,35 +20,35 @@ From there you can respond to the request to send a message back to the user, by
 
 ```JSON
 {
-	item: {
-		sender: {
-			id: "USER_ID"
-		},
-		recipient: {
-			id: "PAGE_ID"
-		},
-		timestamp: 1500046868266,
-		message: {
-			/* This is the same structure as the [Messenger Webhook reference](https://developers.facebook.com/docs/messenger-platform/webhook-reference/message) */
-		}
-	},
-	fbuser: {
-		fbid: "USER_ID",
-		first_name: "FIRST_NAME",
-		last_name: "LAST_NAME",
-		profile_pic: "PROFILE_PIC",
-		locale: "LOCALE",
-		timezone: "TIMEZONE",
-		gender: "GENDER",
-		message_count: 56,
-		last_message: 1500046868309,
-		opted_in: '0', // 0 or 1 if they've signed up for broadcasts
-		state: { // this is the state of the user as stored by The Bot Platform's brain
-			messages: {},
-			vars: {},
-			expect: null
-		}
-	}
+  "item": {
+    "sender": {
+      "id": "USER_ID"
+    },
+    "recipient": {
+      id": "PAGE_ID"
+    },
+    "timestamp": 1500046868266,
+    "message": {
+      /* This is the same structure as the [Messenger Webhook reference](https://developers.facebook.com/docs/messenger-platform/webhook-reference/message) */
+    }
+  },
+  "fbuser": {
+    "fbid": "USER_ID",
+    "first_name": "FIRST_NAME",
+    "last_name": "LAST_NAME",
+    "profile_pic": "PROFILE_PIC",
+    "locale": "LOCALE",
+    "timezone": "TIMEZONE",
+    "gender": "GENDER",
+    "message_count": 56,
+    "last_message": 1500046868309,
+    "opted_in": '0', // 0 or 1 if they've signed up for broadcasts
+    "state: { // this is the state of the user as stored by The Bot Platform's brain
+      "messages": {},
+      "vars": {},
+      "expect": null
+    }
+  }
 }
 ```
 
@@ -56,11 +56,11 @@ From there you can respond to the request to send a message back to the user, by
 
 ```JSON
 {
-  recipient: {
-    id: "USER_ID"
+  "recipient": {
+    "id": "USER_ID"
   },
-  message: {
-    text: "Hello world"
+  "message": {
+    "text": "Hello world"
   }
 }
 ```
