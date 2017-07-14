@@ -6,9 +6,9 @@ To use this, you need a [The Bot Platform](http://thebotplatform.com) account an
 
 The way our API works is simply passing the data from Messenger over to your server for response.
 
-You need to make sure you add your url into the API url settings
+You need to make sure you add your url into the API url settings via your admin area.
 
-![API URL settings](http://i.imgur.com/xfsKoGt.png)
+![API URL settings](http://i.imgur.com/qOOdrEz.png)
 
 Now any request that comes through from Work Chat or Messenger will now get sent onto your URL.
 
