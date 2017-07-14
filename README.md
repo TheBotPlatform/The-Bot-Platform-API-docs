@@ -8,7 +8,7 @@ The way our API works is simply passing the data from Messenger over to your ser
 
 You need to make sure you add your url into the API url settings
 
-![API URL settings](http://i.imgur.com/eq7ulPd.png)
+![API URL settings](http://i.imgur.com/xfsKoGt.png)
 
 Now any request that comes through from Work Chat or Messenger will now get sent onto your URL.
 
