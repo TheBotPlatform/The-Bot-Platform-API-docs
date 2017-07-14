@@ -25,7 +25,7 @@ From there you can respond to the request to send a message back to the user, by
       "id": "USER_ID"
     },
     "recipient": {
-      id": "PAGE_ID"
+      "id": "PAGE_ID"
     },
     "timestamp": 1500046868266,
     "message": {
