@@ -18,7 +18,7 @@ From there you can respond to the request to send a message back to the user, by
 
 ## Example POST payload
 
-```
+```js
 {
 	item: {
 		sender: {
@@ -34,28 +34,27 @@ From there you can respond to the request to send a message back to the user, by
 	},
 	fbuser: {
 		fbid: "USER_ID",
-		first_name: 'Syd',
-		last_name: 'Lawrence',
-		profile_pic: 'https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/14183953_1001469883499_2127399168747337182_n.png?oh=96ae77e079ef8de1a96858c485d37570&oe=59A8FABC',
-		locale: null,
-		timezone: null,
-		gender: null,
+		first_name: "FIRST_NAME",
+		last_name: "LAST_NAME",
+		profile_pic: "PROFILE_PIC",
+		locale: "LOCALE",
+		timezone: "TIMEZONE",
+		gender: "GENDER",
 		message_count: 56,
 		last_message: 1500046868309,
-		opted_in: '0',
-		state: {
+		opted_in: '0', // 0 or 1 if they've signed up for broadcasts
+		state: { // this is the state of the user as stored by The Bot Platform's brain
 			messages: {},
 			vars: {},
 			expect: null
-		},
-		id: '100014779451836'
+		}
 	}
 }
 ```
 
 ## Example response
 
-```
+```js
 {
   recipient: {
     id: "USER_ID"
