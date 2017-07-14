@@ -18,7 +18,7 @@ From there you can respond to the request to send a message back to the user, by
 
 ## Example POST payload
 
-```JSON
+```js
 {
   "item": {
     "sender": {
@@ -54,7 +54,7 @@ From there you can respond to the request to send a message back to the user, by
 
 ## Example response
 
-```JSON
+```js
 {
   "recipient": {
     "id": "USER_ID"
