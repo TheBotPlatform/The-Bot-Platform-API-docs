@@ -52,7 +52,9 @@ From there you can respond to the request to send a message back to the user, by
 }
 ```
 
-## Example response
+## Example responses
+
+### Simple text
 
 ```js
 {
@@ -64,6 +66,68 @@ From there you can respond to the request to send a message back to the user, by
   }
 }
 ```
+
+### Send a predefined message on the platform
+
+```js
+{
+  "recipient": {
+    "id": "USER_ID"
+  },
+  "message": {
+    "id": "@BP:MESSAGE:4182"
+  }
+}
+```
+
+### Send a custom response
+
+```js
+{
+  "recipient": {
+    "id": "USER_ID"
+  },
+  "message": {
+    "raw": {
+      "attachment": {
+        "type": "template",
+        "payload": {
+          "template_type": "generic",
+          "elements": [{
+            "title": "The Bot Platform",
+            "subtitle": "Bots bots bots",
+            "image_url": "https://thebotplatform.com/assets/img/brand-logo-@2x.png",
+            "buttons": [{
+              "type": "web_url",
+              "url": "https://thebotplatform.com",
+              "title": "Website"
+            }]
+          }]
+        }
+      }
+    }
+  }
+}
+```
+
+### Send a multipart response
+```js
+{
+  "recipient": {
+    "id": "USER_ID"
+  },
+  "message": {
+    "raw": {
+      "multipart": [{
+        "text": "one"
+      }, { 
+        "text": "two"
+      }, {
+        "text": "three"
+      }]
+    }
+  }
+}
 
 ## Examples in action
 
