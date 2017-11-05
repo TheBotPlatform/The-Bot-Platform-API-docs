@@ -67,6 +67,24 @@ From there you can respond to the request to send a message back to the user, by
 }
 ```
 
+### Simple text and set variables for the user
+
+```js
+{
+  "recipient": {
+    "id": "USER_ID"
+  },
+  "message": {
+    "text": "Hello world"
+  },
+  "set": {
+    "$VARIABLE_NAME1": "VARIABLE_VALUE1",
+    ...
+    "$VARIABLE_NAMEn": "VARIABLE_VALUEn",
+  }
+}
+```
+
 ### Send a predefined message on the platform
 
 ```js
@@ -128,6 +146,8 @@ From there you can respond to the request to send a message back to the user, by
     }
   }
 }
+```
+
 
 ## Examples in action
 
