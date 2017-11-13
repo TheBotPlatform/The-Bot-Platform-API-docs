@@ -30,6 +30,23 @@ From there you can respond to the request to send a message back to the user, by
     "timestamp": 1500046868266,
     "message": {
       /* This is the same structure as the [Messenger Webhook reference](https://developers.facebook.com/docs/messenger-platform/webhook-reference/message) */
+    },
+    "entities" {
+      /* This splits out the message into various NLP entities
+      "datetime": [
+        {
+          "confidence": 0.97249440664957,
+          "values": ["..."],
+          "value": "2017-05-10T14:00:00.000-07:00",
+          "grain": "hour","type": "value"
+        }
+      ],
+      "greetings": [
+        {
+          "confidence": 1,
+          "value": "true"
+        }
+      ]
     }
   },
   "fbuser": {
@@ -156,9 +173,21 @@ From there you can respond to the request to send a message back to the user, by
 
 To view other examples, please make sure you check out the [Messenger docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference#request)
 
+## NLP
+
+By default, Messenger's built-in NLP detects the following entities in English only:
+
+- Greetings (English only)
+- Thanks (English only)
+- Bye (English only)
+- Date/Time
+- Amount of money
+- Phone number
+- Email address
+- Date and time are automatically localized based on the locale sent in the user's profile.
+
+For example, if someone sends the message, “tomorrow at 2pm” or “2 days before Xmas,” you will get the actual timestamp with the message.
+
 ## Troubleshooting
 
 If you're experiencing any issues, or your not sure where to start, don't be afraid to [get in touch](mailto:support@thebotplatform.com).
-
-
-
