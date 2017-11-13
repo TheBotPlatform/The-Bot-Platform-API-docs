@@ -32,7 +32,7 @@ From there you can respond to the request to send a message back to the user, by
       /* This is the same structure as the [Messenger Webhook reference](https://developers.facebook.com/docs/messenger-platform/webhook-reference/message) */
     },
     "entities" {
-      /* This splits out the message into various NLP entities
+      /* This splits out the message into various NLP entities */
       "datetime": [
         {
           "confidence": 0.97249440664957,
