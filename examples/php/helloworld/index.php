@@ -22,3 +22,5 @@ else {
 
 // display the response in json format
 echo json_encode($response);
+
+?>
