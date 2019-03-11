@@ -1,0 +1,22 @@
+{
+  "item": {
+    "sender": {
+      "id": "12345"
+    },
+    "recipient": {
+      "id": "98765"
+    },
+    "timestamp": 1500046868266,
+  },
+  "fbuser": {
+    "fbid": "12345",
+    "first_name": "Paul",
+    "last_name": "King",
+    "locale": "en_GB",
+    "state": {
+      "vars": {
+          "$Experience": "testing"
+      }
+    }
+  }
+}
