@@ -96,8 +96,7 @@ From there you can respond to the request to send a message back to the user, by
   },
   "set": {
     "$VARIABLE_NAME1": "VARIABLE_VALUE1",
-    ...
-    "$VARIABLE_NAMEn": "VARIABLE_VALUEn",
+    "$VARIABLE_NAMEn": "VARIABLE_VALUEn"
   }
 }
 ```
