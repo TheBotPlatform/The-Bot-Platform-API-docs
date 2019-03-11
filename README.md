@@ -62,7 +62,9 @@ From there you can respond to the request to send a message back to the user, by
     "opted_in": '0', // 0 or 1 if they have signed up for broadcasts
     "state": { // this is the state of the user as stored by The Bot Platform's brain
       "messages": {},
-      "vars": {},
+      "vars": {
+          "$Experience": "testing"
+      },
       "expect": null
     }
   }
