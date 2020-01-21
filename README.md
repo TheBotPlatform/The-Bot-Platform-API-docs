@@ -4,17 +4,22 @@
 
 To use this, you need a [The Bot Platform](http://thebotplatform.com) account and make sure your Account Manager has granted you API permissions.
 
-The way our API works is simply passing the data from Messenger over to your server for response.
+## Webhook message parts
 
-You need to make sure you add your url into the API url settings via your admin area.
+Our platform utilises [webhooks](https://zapier.com/blog/what-are-webhooks/).
 
-![API URL settings](http://i.imgur.com/qOOdrEz.png)
+When a webhook message part is triggered to a user, the webhook gets called with a POST payload containing all the information present about the user and the message
 
-Now any request that comes through from Work Chat or Messenger will now get sent onto your URL.
+### Add a webhook message part
 
-Along with the data from Facebook we also attach the user profile, and on top of that we also add on any information stored in The Bot Platform brain about that user.
+You can add a [webhook message part](https://help.thebotplatform.com/en/articles/2625858-webhook-message-part) into a message wherever you want within your bot.
 
-From there you can respond to the request to send a message back to the user, by simply using the same response as the [Messenger Send API structure](https://developers.facebook.com/docs/messenger-platform/send-api-reference#request).
+![Webhook message part](http://i.imgur.com/HdDcZcD.png)
+
+You can only add one webhook part to any given message.
+
+Simply add the URL of your webhook into the option within the message builder.
+
 
 ## Example POST payload
 
@@ -72,6 +77,8 @@ From there you can respond to the request to send a message back to the user, by
 ```
 
 ## Example responses
+
+We use the same [Messenger Send API structure](https://developers.facebook.com/docs/messenger-platform/send-api-reference#request) as Facebook.
 
 ### Simple text
 
