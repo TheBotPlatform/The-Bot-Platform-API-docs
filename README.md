@@ -14,12 +14,11 @@ When a webhook message part is triggered to a user, the webhook gets called with
 
 You can add a [webhook message part](https://help.thebotplatform.com/en/articles/2625858-webhook-message-part) into a message wherever you want within your bot.
 
-You can only add one webhook part to any given message.
-
 Simply add the URL of your webhook into the option within the message builder.
 
 [Watch a webinar](https://youtu.be/tw9KQEZ_Ivk) on how to connect to 3rd party tools from The Bot Platform.
 
+You can only add one webhook part to any given message.
 
 ## Example POST payload
 
