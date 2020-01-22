@@ -33,10 +33,10 @@ You can only add one webhook part to any given message.
     },
     "timestamp": 1500046868266,
     "message": {
-      /* This is the same structure as the [Messenger Webhook reference](https://developers.facebook.com/docs/messenger-platform/webhook-reference/message) */
+      // This is the same structure as the [Messenger Webhook reference](https://developers.facebook.com/docs/messenger-platform/webhook-reference/message)
     },
     "entities" {
-      /* This splits out the message into various NLP entities */
+      // This splits out the message into various NLP entities 
       "datetime": [
         {
           "confidence": 0.97249440664957,
@@ -63,10 +63,11 @@ You can only add one webhook part to any given message.
     "gender": "GENDER",
     "message_count": 56,
     "last_message": 1500046868309,
-    "opted_in": '0', // 0 or 1 if they have signed up for broadcasts
+    "opted_in": "0", // 0 or 1 if they have signed up for broadcasts
     "state": { // this is the state of the user as stored by The Bot Platform's brain
       "messages": {},
       "vars": {
+          // this is where all of the user attributes will be
           "$Experience": "testing"
       },
       "expect": null
