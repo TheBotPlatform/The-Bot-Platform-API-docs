@@ -22,7 +22,7 @@ You can only add one webhook part to any given message.
 
 ## Example POST payload
 
-```json
+```js
 {
   "item": {
     "sender": {
