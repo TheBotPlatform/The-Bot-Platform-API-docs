@@ -22,7 +22,7 @@ You can only add one webhook part to any given message.
 
 ## Example POST payload
 
-```js
+```json
 {
   "item": {
     "sender": {
@@ -81,7 +81,7 @@ We use the same [Messenger Send API structure](https://developers.facebook.com/d
 
 ### Simple text
 
-```js
+```json
 {
   "recipient": {
     "id": "USER_ID"
@@ -94,7 +94,7 @@ We use the same [Messenger Send API structure](https://developers.facebook.com/d
 
 ### Simple text and set variables for the user
 
-```js
+```json
 {
   "recipient": {
     "id": "USER_ID"
@@ -111,7 +111,7 @@ We use the same [Messenger Send API structure](https://developers.facebook.com/d
 
 ### Send a predefined message on the platform
 
-```js
+```json
 {
   "recipient": {
     "id": "USER_ID"
@@ -124,7 +124,7 @@ We use the same [Messenger Send API structure](https://developers.facebook.com/d
 
 ### Send a custom response
 
-```js
+```json
 {
   "recipient": {
     "id": "USER_ID"
@@ -153,7 +153,7 @@ We use the same [Messenger Send API structure](https://developers.facebook.com/d
 ```
 
 ### Send a multipart response
-```js
+```json
 {
   "recipient": {
     "id": "USER_ID"
