@@ -104,8 +104,8 @@ We use the same [Messenger Send API structure](https://developers.facebook.com/d
     "text": "Hello world"
   },
   "set": {
-    "$VARIABLE_NAME1": "VARIABLE_VALUE1",
-    "$VARIABLE_NAMEn": "VARIABLE_VALUEn"
+    "$ATTRIBUTE_NAME1": "ATTRIBUTE_VALUE1",
+    "$ATTRIBUTE_NAMEn": "ATTRIBUTE_VALUE2"
   }
 }
 ```
