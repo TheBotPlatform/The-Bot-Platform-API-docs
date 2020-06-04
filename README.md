@@ -93,7 +93,7 @@ We use the same [Messenger Send API structure](https://developers.facebook.com/d
 }
 ```
 
-### Simple text and set variables for the user
+### Simple text and set attributes for the user
 
 ```json
 {
