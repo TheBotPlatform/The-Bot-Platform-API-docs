@@ -2,7 +2,7 @@
 
 ## Getting started
 
-To use this, you need a [The Bot Platform](http://thebotplatform.com) account and make sure your Account Manager has granted you API permissions.
+To use this, you need a [The Bot Platform](http://thebotplatform.com) account.
 
 ## Webhook message parts
 
