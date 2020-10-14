@@ -153,6 +153,36 @@ We use the same [Messenger Send API structure](https://developers.facebook.com/d
 }
 ```
 
+### Send a custom response with a button for a predefined message
+
+```json
+{
+  "recipient": {
+    "id": "USER_ID"
+  },
+  "message": {
+    "raw": {
+      "attachment": {
+        "type": "template",
+        "payload": {
+          "template_type": "generic",
+          "elements": [{
+            "title": "The Bot Platform",
+            "subtitle": "Bots bots bots",
+            "image_url": "https://thebotplatform.com/assets/img/brand-logo-@2x.png",
+            "buttons": [{
+              "type": "postback",
+              "payload": "@BP:MESSAGE:4182",
+              "title": "Click me"
+            }]
+          }]
+        }
+      }
+    }
+  }
+}
+```
+
 ### Send a multipart response
 ```json
 {
